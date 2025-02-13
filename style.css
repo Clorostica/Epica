@@ -161,8 +161,9 @@ body {
     margin-top: 20px;
 }
 
-/* Estilos de los botones */
 .btn {
+    font-weight: 800;
+    text-transform: uppercase;
     font-size: 18px;
     padding: 15px 40px;
     border: none;
@@ -176,7 +177,6 @@ body {
     box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.4);
 }
 
-/* Efecto al pasar el mouse sobre el botón */
 .btn::before {
     content: "";
     position: absolute;
@@ -208,11 +208,10 @@ body {
     margin-bottom: 80px;
 }
 .swiper-slide {
-    width: 45%; /* Aumenta el ancho del slide */
+    width: 33.33%; /* Aumenta el ancho del slide */
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
     overflow: hidden;
     transition: all 0.3s ease;
 }
@@ -221,7 +220,6 @@ body {
     width: 80%;
     max-width: 800px;
     margin: 50px auto;
-    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
         }
@@ -271,12 +269,6 @@ body {
 .swiper-pagination {
     display: none !important;
 }
-.categories {
-    order: -1;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 
 .products {
@@ -307,9 +299,6 @@ body {
     transform: scale(1.05);
 }
 
-.product-img:hover {
-
-}
 
 .product-txt {
     position: absolute;
@@ -993,8 +982,8 @@ body {
     .botones {
         text-align: center; 
         width: 100%; 
-        display: flex; /* Usamos flexbox para un control más preciso */
-        align-items: center; /* Centra los elementos hijos (el botón) verticalmente */
+        display: flex; 
+        align-items: center; 
     }
     
     .botones button {
@@ -1014,7 +1003,16 @@ body {
         display: none;
     }
     .links {
-        text-align: center;
-        max-width: 80%; /* Hace que haya dos columnas en tablets */
-        text-align: center;
+        text-align: center; 
+        width: 100%; 
+        display: flex; 
+        align-items: center; 
     }}
+    .links div:hover svg {
+    transform: scale(1.2); /* Aumenta el tamaño del SVG */
+    fill: #ff69b4; /* Cambia el color del SVG */
+  }
+  
+     .links a:hover {
+    color: #ff69b4; /* Cambia el color del texto */
+  }
