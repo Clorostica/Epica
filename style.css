@@ -1,0 +1,1020 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+.container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu {
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: #000000;
+    padding: 15px 0;
+    transition: background 0.3s ease, padding 0.3s ease;
+}
+
+.menu.sticky {
+    background: rgba(0, 0, 0, 0.4); /* Aún más transparente */
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu-1 {
+    margin-right: 180px;
+}
+
+.menu-2 {
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+.logo-1 {
+    width: 0;
+}
+
+.logo-2 {
+    width: 250px;
+    height: 30%;         /* La altura está en porcentaje */
+    object-fit: contain; 
+}
+
+.socials {
+    display: flex;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    align-items: center;     /* Centra los íconos verticalmente */
+    gap: 15px;               /* Agrega espacio entre los íconos */
+}
+
+.social {
+    width: 40px;  /* Ajusta el tamaño de los íconos */
+    height: 40px; /* Mantén los íconos en una proporción cuadrada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFB4FD; /* Agrega un borde alrededor de los íconos */
+    border-radius: 50%; /* Hace que los íconos sean círculos */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.social:hover {
+    background-color: #B8FC89; /* Cambia el fondo al pasar el mouse */
+    transform: scale(1.1); /* Agranda ligeramente el ícono */
+}
+
+.social svg {
+    width: 70%; /* Ajusta el tamaño de los íconos SVG */
+    height: 70%; /* Ajusta el tamaño de los íconos SVG */
+    fill: rgba(0, 0, 0, 1); /* Color del ícono */
+    transition: fill 0.3s ease; /* Efecto de transición en el color */
+}
+
+.social:hover svg {
+    fill: #FFB4FD; /* Cambia el color del ícono al pasar el mouse */
+}
+/* Estilos para la lista de enlaces en el menú */
+.menu .navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    margin: 0 15px; /* Espaciado entre los links */
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+/* Efecto hover en los enlaces */
+.menu .navbar ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFB4FD; /* Subrayado en color rosa */
+    transform: scaleX(0); /* No se ve inicialmente */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Animación de la barra */
+}
+
+.menu .navbar ul li a:hover {
+    color: #FFB4FD; /* Cambia el color del texto al pasar el mouse */
+    transform: scale(1.1); /* Le da un pequeño efecto de agrandado */
+}
+
+.menu .navbar ul li a:hover::after {
+    transform: scaleX(1); /* La barra se expande de izquierda a derecha */
+    transform-origin: bottom left; /* Cambia el origen de la animación */
+}
+
+#menu {
+    display: none;
+}
+
+/* Icono de menú */
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.botones {
+    display: flex;               
+    justify-content: space-between; 
+    gap: 2px;
+    margin-top: 20px;
+}
+
+/* Estilos de los botones */
+.btn {
+    font-size: 18px;
+    padding: 15px 40px;
+    border: none;
+    color: white;
+    background: linear-gradient(45deg, #FFB4FD, #ff9a9e);
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.4);
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.6s ease-out;
+}
+
+.btn:hover::before {
+    width: 200px;
+    height: 200px;
+    opacity: 0.3;
+}
+
+.btn:hover {
+    animation: vibrar 0.3s ease-in-out infinite alternate;
+    box-shadow: 0px 6px 15px rgba(255, 105, 180, 0.6);
+    transform: scale(1.05);
+}
+/* Swiper num 1*/
+
+.mySwiper-1 {
+    margin-bottom: 80px;
+}
+.swiper-slide {
+    width: 45%; /* Aumenta el ancho del slide */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.swiper-container {
+    color: #ffffff;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+
+.slider-txt {
+    margin: 0 15px;
+    width: 100%;
+}
+
+.slider-txt h1 {
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.slider-txt p {
+    font-size: 16px;
+    color: #a7a7a7;
+    margin-bottom: 20px;
+}
+
+.swiper-button-prev::after, 
+.swiper-button-next::after {
+    font-size: 25px;
+    transition: none;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    color: #FFB4FD;
+    transition: none;
+}
+
+.swiper-button-prev:hover, 
+.swiper-button-next:hover {
+    color: #FF69B4;
+    transform: none;
+}
+
+.swiper-wrapper,
+.swiper-slide {
+    transition: none !important;
+    transform: none !important;
+}
+
+.swiper-pagination {
+    display: none !important;
+}
+.categories {
+    order: -1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.products {
+    background-color: #000;
+}
+
+.products h4 {
+    color: #ffffff;
+}
+
+.product-img {
+    height: 600px;
+    width: 380px;
+    overflow: hidden;
+    transition: all 0.3s ease; 
+}
+
+.product-img img {
+    width: 400px;
+    height: 550px;
+    object-fit: cover;
+    transition: transform 0.20s ease; /* Transición más suave */
+    transform-origin: center;
+}
+.product-img img:hover {
+    animation: vibrar 0.3s ease-in-out infinite alternate;
+    box-shadow: 0px 6px 15px rgba(255, 105, 180, 0.6);
+    transform: scale(1.05);
+}
+
+.product-img:hover {
+
+}
+
+.product-txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
+}
+
+.product-txt h4 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.product-txt p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-txt span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FF69B4;
+    transition: all 0.3s ease;
+}
+
+.product-txt span:hover {
+    color: #FFB4FD;
+    transform: translateY(-10px);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+/* Tabs de categorías */
+.tabs {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs label {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin: 0 10px 20px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tabs label:hover {
+    animation: vibrar 0.3s ease-in-out infinite alternate;
+    box-shadow: 0px 6px 15px rgba(255, 105, 180, 0.6);
+    transform: scale(1.05);
+}
+
+.tabs input[type="radio"]:checked + label {
+    background: linear-gradient(45deg, #FFB4FD, #ff9a9e);
+    color: white;
+}
+
+.tab {
+    display: none;
+    padding-top: 30px;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+/* info */
+.info-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si el contenedor tiene altura */
+}
+
+.info-img img {
+    width: 100%;
+    max-width: 400px; /* Ajusta el tamaño máximo en móviles */
+    display: block;
+    margin: auto; /* Centra la imagen */
+    padding-bottom: 100px;
+}
+
+.info {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: space-between; /* Espacio entre los elementos */
+    gap: 40px; /* Espacio entre texto e imagen */
+}
+
+.info-txt p{
+    font-size: 18px;
+    color: #a7a7a7;
+}
+.info-txt h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #ffffff;
+}
+.imagen img {
+    width: 500px; 
+    height: auto;
+    display: block;
+}
+/*horario*/
+.horario {
+    background-color: #000;
+    padding: 40px 20px;
+}
+
+.horario-info {
+    text-align: center;
+}
+
+.horario h2 {
+    text-align: left;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.horario-txt {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .horario-txt .txt {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .socials {
+    display: flex;
+  }
+  
+  .social {
+    margin-right: 10px; /* Espacio entre los iconos de redes sociales */
+  }
+  
+    .txt h4 {
+    font-size: 20px;
+    color: #FF69B4;
+    margin-bottom: 20px;
+}
+
+    .txt p {
+    font-size: 16px;
+    color: #a7a7a7;
+}
+
+    .socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+    .social svg {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social svg:hover {
+    transform: scale(1.2);
+}
+.map{
+    filter: grayscale(100%) invert(92%) contrast(93%);
+}
+/*swiper*/
+
+/*footer*/
+.footer {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Para que se ajusten en pantallas pequeñas */
+    gap: 20px; /* Espacio entre las columnas */
+    align-items: flex-start; /* Alinear elementos en la parte superior */
+}
+.footer h3{
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.links svg {
+    fill: white; /* Cambia esto según tu diseño */
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+.links div {
+    display: flex;
+    align-items: center; /* Alinea el SVG y el texto en la misma línea */
+    gap: 10px; /* Espacio entre icono y texto */
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Asegura que el texto esté alineado */
+}
+
+.links a:hover {
+    color: #FF69B4; /* Efecto hover bonito */
+}
+
+.links1 {
+    color: #ffffff;
+    flex: 1; /* Distribuye el espacio entre los elementos */
+    min-width: 250px; /* Evita que se encojan demasiado en pantallas pequeñas */
+}
+.links1 h3 {
+    padding-bottom: 20px;
+}
+
+.links1 ul {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en una columna */
+    gap: 10px; /* Espacio entre los enlaces */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.links1 ul li {
+    margin: 0;
+}
+
+.links1 ul li a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap; /* Evita que los enlaces se dividan en varias líneas */
+}
+
+.links1 ul li a:hover {
+    color: #FF69B4;
+}
+.link1:visited{
+    color: #ffffff;
+}
+@keyframes vibrar {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(3px); }
+}
+
+@media (max-width: 480px) {
+    .info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+    .info-txt {
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%; /* Asegura que ocupe más espacio en pantallas pequeñas */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .info-txt h1 {
+        font-size: 32px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+
+    .info-txt p {
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+    }
+    .info-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-img img {
+        width: 90%; /* Reduce el tamaño para que no toque los bordes */
+        max-width: 400px; /* Evita que sea demasiado grande */
+    }
+    .tabs {
+
+        flex-direction: column; /* Las pestañas se colocan en columna */
+        gap: 15px;
+    }
+
+    .tabs label {
+        padding: 12px 20px;
+        font-size: 14px;
+        margin: 0;
+        width: 100%; /* Que ocupe todo el ancho */
+        text-align: center;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 350px;
+    }
+
+    .product-img {
+        width: 100%;
+        transition: none;
+    }
+    .product-txt h4 {
+        font-size: 18px;
+    }
+
+    .product-txt p {
+        font-size: 12px;
+    }
+
+    .product-txt span {
+        font-size: 16px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        font-size: 20px;
+    }}
+
+@media (max-width: 768px) {
+
+    .categories {
+        order: -1;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .tabs {
+        order: -1; /* Mueve los tabs arriba */
+        padding-top: 20px; /* Reduce el espacio superior */
+    }
+
+
+    .slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .swiper-wrapper {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+    }
+    .swiper-slide {
+        width: 100% !important;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .product-txt {
+        padding: 15px;
+    }
+    .product-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .product-img {
+        transition: none;
+        height: 300px; 
+    }
+    .product-img {
+        width: 100%; /* Aquí puedes ajustar el porcentaje según lo necesites */
+        max-width: 100%; /* Asegura que no se salga del contenedor */
+        height: auto;
+        align-items: center;
+    
+            }
+    .botones {
+            text-align: center; /* Centrar los botones en pantallas pequeñas */
+            margin-top: 30px;
+        }
+    
+    .btn {
+            margin: 0 10px; /* Espaciado entre los botones */
+        }
+    .tabs {
+        flex-direction: row; /* Cambiar a dirección de fila */
+        justify-content: center; /* Centrar las etiquetas */
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .tabs label {
+        padding: 12px 20px;
+        font-size: 16px;
+        text-align: center;
+        margin: 0 5px;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        flex-direction: column; /* Poner los productos en columna */
+        gap: 20px;
+    }
+
+    .swiper-slide {
+        width: 100%; /* Hacer cada imagen más ancha */
+        height: 600px; /* Ajustar la altura para pantallas pequeñas */
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        font-size: 25px;
+    }
+    .imagen img {
+    width: 80%; 
+    margin: 0 auto;
+    }
+    .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+    .texto {
+    flex: 1;
+    min-width: 250px;
+}
+
+    .texto h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+    .texto p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+   
+    .txt h4{
+    font-size: 18px;
+    color: #A7A7A7;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+    .socials {
+    gap: 10px;
+}
+
+    .social svg {
+    width: 25px;
+    height: 25px;
+}
+.horario {
+    padding: 100px 0px;
+  }
+  
+  .horario-info {
+    width: 100%;
+    text-align: center;
+    display: flex; /* Añade esta línea */
+    flex-direction: column; /* Añade esta línea */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+  
+  .horario-info h2 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+  
+  .horario-txt {
+    flex-direction: column;
+  }
+  
+  .horario-txt .txt {
+    width: 100%;
+  }
+
+    .horario-info h2 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 auto 50px; 
+    text-align: center; 
+}
+
+    .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 50px;
+    }
+    .imagen img {
+    max-width: 150px; /* Ajusta el tamaño del logo */
+    }
+
+    .slider-img {
+    text-align: center; /* Centra los elementos en línea dentro del contenedor */
+    }
+    .slider-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;   /* Hace que el margin auto funcione */
+    margin: 0 auto;   /* Centra la imagen horizontalmente */
+    }
+  
+    .links1{
+    display: none;
+    }
+
+    .footer h3{
+    font-size: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+    .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+    }
+@media(max-width: 991px) {
+    .menu {
+        padding: 20px;
+        justify-content: space-between;
+    }
+    .menu-2 {
+        display: none;
+    }
+    .logo-1 {
+        width: 100px;
+    }
+    .logo-2 {
+        width: 0;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        padding: 30px;
+        margin-top: 100px;
+    }
+
+    .slider {
+        flex-direction: column;
+    }
+
+    .slider-txt {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .slider-txt h1 {
+        font-size: 50px;
+    }
+
+    .slider-txt p {
+        font-size: 16px;
+    }
+    .slider-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .slider-img img {
+        width: 90%; /* Aquí puedes ajustar el porcentaje según lo necesites */
+        max-width: 100%; /* Asegura que no se salga del contenedor */
+        height: auto;
+        margin-right: 0px;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        padding-top: 100px;
+    }
+    .tabs {
+        padding-top: 100px;
+    }
+
+    .tabs label {
+
+        width: 100%;
+    }
+    .info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .horario {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .horario-info h2 {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .social img {
+        margin: 8px 0 0 0;
+    }
+
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .botones {
+        text-align: center; 
+        width: 100%; 
+        display: flex; /* Usamos flexbox para un control más preciso */
+        align-items: center; /* Centra los elementos hijos (el botón) verticalmente */
+    }
+    
+    .botones button {
+        display: inline-block; 
+        margin: 0 auto; 
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #ff4081;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .footer {
+        justify-content: center;
+    }
+    .links1 {
+        display: none;
+    }
+    .links {
+        text-align: center;
+        max-width: 80%; /* Hace que haya dos columnas en tablets */
+        text-align: center;
+    }}
