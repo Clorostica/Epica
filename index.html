@@ -1,367 +1,523 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epica</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://clorostica.github.io/Epica/style.css">
-</head>
-<style>
-
-</style>
- <body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina 4</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style></style>
+  <body>
     <header>
-        <div class="menu">
-                 <img class="logo-1" src="https://clorostica.github.io/Epica/img/epicalogo.png" alt="">
-                <input type="checkbox" id="menu"/>
-                <label for="menu">
-                     <img src="https://clorostica.github.io/Epica//img/menu.png" class="menu-icono" alt="">
-                </label>
-                 <nav class="navbar">
-                        <div class="menu-1">
-                             <ul>
-                                 <li><a href="#"> Inicio</a></li>
-                                 <li><a href="#"> Productos</a></li>
-                                 <li><a href="#"> Servicios</a></li>
-                             </ul>
-                        </div>
-                        <img class="logo-2" src="https://clorostica.github.io/Epica/img/epicalogo.png" alt="">
-                        <div class="menu-2">
-                                 <ul>
-                                    <li><a href="#"> Horario</a></li>
-                                </ul>
-                                <div class="socials">
-                                         <div class="social">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg>
-                                         </div>
-                                          <div class="social">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>
-                                        </div>
-                                         <div class="social">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"></path></svg>
-                                        </div>
-                                </div>
-                        </div>
-                </nav>
-        </div>                                   
-    </header>
-
-        <div class="tabs container">
-            <input type="radio" name="tabs" id="tab1" class="tabInput" value="1" checked>
-            <label for="tab1">Damen Hosen & Röcke</label>
-            <div class="tab" id="content1">
-                <div class="swiper mySwiper-1">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <div class="product-img">
-                                    <h4>Nuevo</h4>
-                                    <img src="https://clorostica.github.io/Epica/img/swipper1.jpg" alt="" data-hover="https://clorostica.github.io/Epica/img/swipper1_hover.jpg">
-                                </div>
-                                <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">$80.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <div class="product-img">
-                                    <h4>Nuevo</h4>
-                                    <img src="https://clorostica.github.io/Epica/img/swipper2.jpg" alt="" data-hover="https://clorostica.github.io/Epica/img/swipper2_hover.jpg">
-                                </div>
-                                <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">$80.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <div class="product-img">
-                                    <h4>Nuevo</h4>
-                                    <img src="https://clorostica.github.io/Epica/img/swipper3.jpg" alt="" data-hover="https://clorostica.github.io/Epica/img/swipper3_hover.jpg">
-                                </div>
-                                <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">$80.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+      <div class="menu">
+        <img
+          class="logo-1"
+          src="https://clorostica.github.io/Epica/img/epicalogo.png"
+          alt=""
+        />
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img
+            src="https://clorostica.github.io/Epica/img/menu.png"
+            class="menu-icono"
+            alt=""
+          />
+        </label>
+        <nav class="navbar">
+          <div class="menu-1">
+            <ul>
+              <li><a href="#"> Inicio</a></li>
+              <li><a href="#"> Productos</a></li>
+              <li><a href="#"> Servicios</a></li>
+            </ul>
+          </div>
+          <img
+            class="logo-2"
+            src="https://clorostica.github.io/Epica/img/epicalogo.png"
+            alt=""
+          />
+          <div class="menu-2">
+            <ul>
+              <li><a href="#"> Horario</a></li>
+            </ul>
+            <div class="socials">
+              <div class="social">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgb(255, 255, 255); transform: ; msFilter:;"
+                >
+                  <path
+                    d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="social">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgb(255, 255, 255); transform: ; msFilter:;"
+                >
+                  <path
+                    d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"
+                    ></path>
+                  <circle cx="11.994" cy="11.979" r="3.003"></circle>
+                </svg>
+              </div>
+              <div class="social">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgb(255, 255, 255); transform: ; msFilter:;"
+                >
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"
+                  ></path>
+                </svg>
+              </div>
             </div>
-    
-            <!-- Segundo tab con su respectivo slider -->
-            <input type="radio" name="tabs" id="tab2" class="tabInput" value="2">
-            <label for="tab2">Most Liked: Für Ihn</label>
-            <div class="tab" id="content2">
-                    <div class="swiper mySwiper-2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <div class="product-img">
-                                    <h4>Nuevo</h4>
-                                    <img src="https://clorostica.github.io/Epica/img/slider3_2.jpg" alt="" data-hover="https://clorostica.github.io/Epica/img/slider3_2hover.jpg">
-                                </div>
-                                <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">$80.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <div class="product-img">
-                                    <h4>Nuevo</h4>
-                                    <img src="https://clorostica.github.io/Epica/img/slider3_1.jpg" alt="" data-hover="https://clorostica.github.io/Epica/img/slider3_1hover.jpg">
-                                </div>
-                                <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">$80.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <div class="product-img">
-                                    <h4>Nuevo</h4>
-                                    <img src="https://clorostica.github.io/Epica/img/slider3_3.jpg" alt="" data-hover="https://clorostica.github.io/Epica/img/slider3_3hover.jpg">
-                                </div>
-                                <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">$80.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Tercer tab con su respectivo slider -->
-            <input type="radio" name="tabs" id="tab3" class="tabInput" value="3">
-            <label for="tab3">Neues in Wohnen & Lifestyle</label>
-            <div class="tab" id="content3">
-                <div class="swiper mySwiper-3">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <div class="product-img">
-                                    <h4>Nuevo</h4>
-                                    <img src="https://clorostica.github.io/Epica/img/slider2_2.jpg" alt="" data-hover="https://clorostica.github.io/Epica/img/slider2_hover2.jpg">
-                                </div>
-                                <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">$80.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <div class="product-img">
-                                    <h4>Nuevo</h4>
-                                    <img src="https://clorostica.github.io/Epica/img/slider2_1.jpg" alt="" data-hover="https://clorostica.github.io/Epica/img/slider2_hover1.jpg">
-                                </div>
-                                <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">$80.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product">
-                                <div class="product-img">
-                                    <h4>Nuevo</h4>
-                                    <img src="https://clorostica.github.io/Epica/img/slider2_3.jpg" alt="" data-hover="https://clorostica.github.io/Epica/img/slider2_3hover.jpg">
-                                </div>
-                                <div class="product-txt">
-                                    <h4>Producto</h4>
-                                    <p>calidad premium</p>
-                                    <span class="price">$80.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <div class="info container">
-        <div class="info-txt">
-            <h1> Information</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolor a officiis blanditiis sapiente, 
-                asperiores dolorum nostrum id quos illo qui quasi reprehenderit ea, nihil voluptatibus neque nobis voluptates doloribus.
-            </p>
-            <div class="botones">
-                    <button class="btn">💖 Mas informacion💖</button>
-            </div>
-        </div>
-        <div class="container">
-            <img class= "info-img" src="https://clorostica.github.io/Epica/img/EPICA9.jpg">
+          </div>
+        </nav>
       </div>
-    </div>
-    <div class="container">
-        <img class= "info-img" src="https://clorostica.github.io/Epica/img/EPICA11.jpg">
-    </div>
-    <section class="horario">
-        <div class="horario-info container">
-          <h2>Horario</h2>
-          <div class="horario-txt">
-            <div class="txt">
-              <h4>Address</h4>
-              <p>ipsum dolor sit amet</p>
-              <p>ipsum dolor sit amet</p>
-            </div>
-      
-            <div class="txt">
-              <h4>Times</h4>
-              <p>Monday to friday: 9am - 8pm</p>
-              <p>Saturday to Sunday 11am- 7pm</p>
-            </div>
-      
-            <div class="txt">
-              <h4>Phone</h4>
-              <p>Monday to friday: 9am - 8pm</p>
-              <p>Saturday to Sunday 11am- 7pm</p>
-            </div>
-      
-            <div class="txt">
-              <h4>Social Media</h4>
-              <div class="socials">
-                <div class="social">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    style="fill: rgb(255, 255, 255); transform: ; msFilter:;"
-                  >
-                    <path
-                      d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
-                    ></path>
-                  </svg>
+    </header>
+    <main>
+      <div class="tabs container">
+        <input
+          type="radio"
+          name="tabs"
+          id="tab1"
+          class="tabInput"
+          value="1"
+          checked
+        />
+        <label for="tab1">Damen Hosen & Röcke</label>
+        <div class="tab" id="content1">
+          <div class="swiper mySwiper-1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img
+                      src="https://clorostica.github.io/Epica/img/swipper1.jpg"
+                      alt=""
+                      data-hover="https://clorostica.github.io/Epica/img/swipper1_hover.jpg"
+                    />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
                 </div>
-                <div class="social">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    style="fill: rgb(255, 255, 255); transform: ; msFilter:;"
-                  >
-                    <path
-                      d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"
-                    ></path>
-                    <circle cx="11.994" cy="11.979" r="3.003"></circle>
-                  </svg>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img
+                      src="https://clorostica.github.io/Epica/img/swipper2.jpg"
+                      alt=""
+                      data-hover="https://clorostica.github.io/Epica/img/swipper2_hover.jpg"
+                    />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
                 </div>
-                <div class="social">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    style="fill: rgb(255, 255, 255); transform: ; msFilter:;"
-                  >
-                    <path
-                      d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"
-                    ></path>
-                  </svg>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img
+                      src="https://clorostica.github.io/Epica/img/swipper3.jpg"
+                      alt=""
+                      data-hover="https://clorostica.github.io/Epica/img/swipper3_hover.jpg"
+                    />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-              </section>
 
-        <section>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4854.904640571039!2d13.413117876751054!3d52.52524993584073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1ea617f66d%3A0xe55bf04f7ba71229!2sWadzeckstra%C3%9Fe%204%2C%2010178%20Berlin!5e0!3m2!1sde!2sde!4v1733860311555!5m2!1sde!2sde" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       
-        </section>
-
-        <footer class="footer container">
-            <div class="links1">
-                <h3> Hilfe</h3>
-                <ul>
-                    <li><a href="#">Bestellstatus</a></li>
-                    <li><a href="#">  Versand & Lieferung</a></li>
-                    <li><a href="#">  Rücksendung, Umtausch & Stornierung</a></li>
-                    <li><a href="#">  Bezahlung</a></li>
-                    <li><a href="#">  Kund*innenservice </a></li>
-                    <li><a href="#">  Kontakt </a></li>
-                    <li><a href="#">  Rückruf von Produkten </a></li>
-                </ul>
-            </div>
-            <div class="links1">
-                <h3>Mehr über UO</h3>
-                <ul>
-                    <li><a href="#">Studentenrabatt</a></li>
-                    <li><a href="#">Klarna</a></li>
-                    <li><a href="#">Marken</a></li>
-                    <li><a href="#">Geschenkgutscheine</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Shop Nordamerika</a></li>
-                </ul>
-            </div>
-            <div class="links1">
-                <h3>Extras</h3>
-                <ul>
-                    <li><a href="#">Epica Rewards</a></li>
-                    <li><a href="#">Epica im Wandel</a></li>
-                    <li><a href="#">Epica Marketplaces</a></li>
-                    <li><a href="#">Epica Body & Mind</a></li>
-                    <li><a href="#">Epica an Ihnen</a></li>
-                </ul>
-            </div>
-                <div class="links">
-                    <div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M13 4.069V2h-2v2.069A8.01 8.01 0 0 0 4.069 11H2v2h2.069A8.008 8.008 0 0 0 11 19.931V22h2v-2.069A8.007 8.007 0 0 0 19.931 13H22v-2h-2.069A8.008 8.008 0 0 0 13 4.069zM12 18c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"/></svg>
-                        <a href="#"><h3>Store Locator</h3></a>
-                    </div>
-                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"/></svg>
-                        <a href="#"><h3>Newsletter abonnieren</h3></a></div>
-                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="9.5" cy="9.5" r="1.5"/><circle cx="14.5" cy="9.5" r="1.5"/><path d="M12 2C6.486 2 2 5.589 2 10c0 2.908 1.897 5.515 5 6.934V22l5.34-4.004C17.697 17.852 22 14.32 22 10c0-4.411-4.486-8-10-8zm0 14h-.333L9 18v-2.417l-.641-.247C5.671 14.301 4 12.256 4 10c0-3.309 3.589-6 8-6s8 2.691 8 6-3.589 6-8 6z"/></svg><a href="#"><h3>Sign up for Texts</h3></a></div>
+        <input
+          type="radio"
+          name="tabs"
+          id="tab2"
+          class="tabInput"
+          value="2"
+        />
+        <label for="tab2">Most Liked: Für Ihn</label>
+        <div class="tab" id="content2">
+          <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img
+                      src="https://clorostica.github.io/Epica/img/slider3_2.jpg"
+                      alt=""
+                      data-hover="https://clorostica.github.io/Epica/img/slider3_2hover.jpg"
+                    />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
                 </div>
-        </footer>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img
+                      src="https://clorostica.github.io/Epica/img/slider3_1.jpg"
+                      alt=""
+                      data-hover="https://clorostica.github.io/Epica/img/slider3_1hover.jpg"
+                    />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img
+                      src="https://clorostica.github.io/Epica/img/slider3_3.jpg"
+                      alt=""
+                      data-hover="https://clorostica.github.io/Epica/img/slider3_3hover.jpg"
+                    />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input
+          type="radio"
+          name="tabs"
+          id="tab3"
+          class="tabInput"
+          value="3"
+        />
+        <label for="tab3">Neues in Wohnen & Lifestyle</label>
+        <div class="tab" id="content3">
+          <div class="swiper mySwiper-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img
+                      src="https://clorostica.github.io/Epica/img/slider2_2.jpg"
+                      alt=""
+                      data-hover="https://clorostica.github.io/Epica/img/slider2_hover2.jpg"
+                    />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img
+                      src="https://clorostica.github.io/Epica/img/slider2_1.jpg"
+                      alt=""
+                      data-hover="https://clorostica.github.io/Epica/img/slider2_hover1.jpg"
+                    />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img
+                      src="https://clorostica.github.io/Epica/img/slider2_3.jpg"
+                      alt=""
+                      data-hover="https://clorostica.github.io/Epica/img/slider2_3hover.jpg"
+                    />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="info container">
+      <div class="info-txt">
+        <h1>Information</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+          dolor a officiis blanditiis sapiente, asperiores dolorum nostrum id
+          quos illo qui quasi reprehenderit ea, nihil voluptatibus neque nobis
+          voluptates doloribus.
+        </p>
+        <div class="botones">
+          <button class="btn">💖 Mas informacion💖</button>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          class="info-img"
+          src="https://clorostica.github.io/Epica/img/EPICA9.jpg"
+        />
+      </div>
+    </div>
+    <div class="container">
+      <img
+        class="info-img"
+        src="https://clorostica.github.io/Epica/img/EPICA11.jpg"
+      />
+    </div>
+    <section class="horario">
+      <div class="horario-info container">
+        <h2>Horario</h2>
+        <div class="horario-txt">
+          <div class="txt">
+            <h4>Address</h4>
+            <p>ipsum dolor sit amet</p>
+            <p>ipsum dolor sit amet</p>
+          </div>
+
+          <div class="txt">
+            <h4>Times</h4>
+            <p>Monday to friday: 9am - 8pm</p>
+            <p>Saturday to Sunday 11am- 7pm</p>
+          </div>
+
+          <div class="txt">
+            <h4>Phone</h4>
+            <p>Monday to friday: 9am - 8pm</p>
+            <p>Saturday to Sunday 11am- 7pm</p>
+          </div>
+
+          <div class="txt">
+            <h4>Social Media</h4>
+            <div class="socials">
+              <div class="social">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgb(255, 255, 255); transform: ; msFilter:;"
+                >
+                  <path
+                    d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="social">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgb(255, 255, 255); transform: ; msFilter:;"
+                >
+                  <path
+                    d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"
+                    ></path>
+                  <circle cx="11.994" cy="11.979" r="3.003"></circle>
+                </svg>
+              </div>
+              <div class="social">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgb(255, 255, 255); transform: ; msFilter:;"
+                >
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <section>
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4854.904640571039!2d13.413117876751054!3d52.52524993584073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1ea617f66d%3A0xe55bf04f7ba71229!2sWadzeckstra%C3%9Fe%204%2C%2010178%20Berlin!5e0!3m2!1sde!2sde!4v1733860311555!5m2!1sde!2sde"
+        width="100%"
+        height="500"
+        style="border: 0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <footer class="footer container">
+      <div class="links1">
+        <h3>Hilfe</h3>
+        <ul>
+          <li><a href="#">Bestellstatus</a></li>
+          <li><a href="#"> Versand & Lieferung</a></li>
+          <li><a href="#"> Rücksendung, Umtausch & Stornierung</a></li>
+          <li><a href="#"> Bezahlung</a></li>
+          <li><a href="#"> Kund*innenservice </a></li>
+          <li><a href="#"> Kontakt </a></li>
+          <li><a href="#"> Rückruf von Produkten </a></li>
+        </ul>
+      </div>
+      <div class="links1">
+        <h3>Mehr über UO</h3>
+        <ul>
+          <li><a href="#">Studentenrabatt</a></li>
+          <li><a href="#">Klarna</a></li>
+          <li><a href="#">Marken</a></li>
+          <li><a href="#">Geschenkgutscheine</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Shop Nordamerika</a></li>
+        </ul>
+      </div>
+      <div class="links1">
+        <h3>Extras</h3>
+        <ul>
+          <li><a href="#">Epica Rewards</a></li>
+          <li><a href="#">Epica im Wandel</a></li>
+          <li><a href="#">Epica Marketplaces</a></li>
+          <li><a href="#">Epica Body & Mind</a></li>
+          <li><a href="#">Epica an Ihnen</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M13 4.069V2h-2v2.069A8.01 8.01 0 0 0 4.069 11H2v2h2.069A8.008 8.008 0 0 0 11 19.931V22h2v-2.069A8.007 8.007 0 0 0 19.931 13H22v-2h-2.069A8.008 8.008 0 0 0 13 4.069zM12 18c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"
+            />
+          </svg>
+          <a href="#">
+            <h3>Store Locator</h3>
+          </a>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"
+            />
+          </svg>
+          <a href="#">
+            <h3>Newsletter abonnieren</h3>
+          </a>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="9.5" cy="9.5" r="1.5" />
+            <circle cx="14.5" cy="9.5" r="1.5" />
+            <path
+              d="M12 2C6.486 2 2 5.589 2 10c0 2.908 1.897 5.515 5 6.934V22l5.34-4.004C17.697 17.852 22 14.32 22 10c0-4.411-4.486-8-10-8zm0 14h-.333L9 18v-2.417l-.641-.247C5.671 14.301 4 12.256 4 10c0-3.309 3.589-6 8-6s8 2.691 8 6-3.589 6-8 6z"
+            />
+          </svg>
+          <a href="#">
+            <h3>Sign up for Texts</h3>
+          </a>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script>
-window.onscroll = function() {stickyMenu()};
+      window.onscroll = function () {
+        stickyMenu();
+      };
 
-var menu = document.querySelector(".menu");  // Seleccionamos el menú
-var sticky = menu.offsetTop;  // Obtenemos la posición en la que el menú se hace sticky
+      var menu = document.querySelector(".menu"); // Seleccionamos el menú
+      var sticky = menu.offsetTop; // Obtenemos la posición en la que el menú se hace sticky
 
-function stickyMenu() {
-    if (window.pageYOffset > sticky) {
-        menu.classList.add("sticky");  // Añadimos la clase sticky cuando el scroll pasa el menú
-    } else {
-        menu.classList.remove("sticky");  // Removemos la clase sticky cuando el scroll está arriba
-    }
-}
+      function stickyMenu() {
+        if (window.pageYOffset > sticky) {
+          menu.classList.add("sticky"); // Añadimos la clase sticky cuando el scroll pasa el menú
+        } else {
+          menu.classList.remove("sticky"); // Removemos la clase sticky cuando el scroll está arriba
+        }
+      }
     </script>
     <script>
-    document.querySelectorAll('.product-img img').forEach(img => {
-    const originalSrc = img.src;
-    const hoverSrc = img.getAttribute('data-hover');
+      document.querySelectorAll(".product-img img").forEach((img) => {
+        const originalSrc = img.src;
+        const hoverSrc = img.getAttribute("data-hover");
 
-    img.addEventListener('mouseenter', () => {
-        img.src = hoverSrc;
-    });
+        img.addEventListener("mouseenter", () => {
+          img.src = hoverSrc;
+        });
 
-    img.addEventListener('mouseleave', () => {
-        img.src = originalSrc;
-    });
-});
+        img.addEventListener("mouseleave", () => {
+          img.src = originalSrc;
+        });
+      });
     </script>
- </body>
- </html>
+  </body>
+</html>
