@@ -1,60 +1,55 @@
-🚀 Epica - Product Showcase Page
-✨ Overview
-This is a responsive product showcase webpage featuring multiple product categories displayed through interactive sliders. The design includes:
+# 🚀 Epica - Product Showcase Page
 
-Tabbed navigation for switching categories
+## ✨ Overview
 
-A responsive hamburger menu for mobile devices
+This is a **responsive product showcase webpage** featuring multiple product categories displayed through **interactive sliders**.
 
-Smooth hover effects and modern styling
+---
 
-🔥 Features
-🍔 Responsive Hamburger Menu Toggle
+## 🔥 Features
 
-📂 Tabbed Navigation to switch between product categories
+- 🍔 **Responsive Hamburger Menu Toggle**  
+- 📂 **Tabbed Navigation** to switch between product categories  
+- 🎞️ **Product Sliders** with [Swiper.js](https://swiperjs.com/)  
+- ✨ Hover effects on product images  
+- 🔗 Embedded **SVG social media icons**  
+- 🗺️ Embedded **Google Maps iframe**  
+- 🎨 Clean, modern CSS styling  
 
-🎞️ Product Sliders implemented with Swiper.js
+---
 
-✨ Hover effects on product images for better UX
+## 🛠️ Technologies Used
 
-🔗 Social media icons embedded as SVGs
+- **HTML5**  
+- **CSS3**  
+- **JavaScript** (Swiper.js library)  
+- **SVG icons**  
+- **Google Maps**  
 
-🗺️ Google Maps iframe embedded for location display
+---
 
-🎨 Clean and modern CSS styling
+## 🚦 How to Use
 
-🛠️ Technologies Used
-HTML5
+1. Open `index.html` in a modern browser  
+2. Use the hamburger menu on mobile devices  
+3. Click tabs to switch product categories  
+4. Navigate products with slider arrows  
+5. Check location on embedded map  
 
-CSS3
+---
 
-JavaScript (Swiper.js library via CDN)
+## 📂 File Structure
 
-SVG icons
+- `index.html` — main page  
+- `style.css` — styles  
+- External libraries loaded via CDN  
 
-Google Maps embed
+---
 
-🚦 How to Use
-Open the index.html file in a modern web browser.
+## ⚠️ Notes
 
-Use the hamburger menu to navigate on mobile.
+- 🌐 Internet connection required for CDN libraries & Google Maps  
+- 📱 Optimized for desktop & mobile  
 
-Click on the tabs to switch product categories.
-
-Slide through the products within each category using the slider controls.
-
-Check out the location on the embedded Google Map in the footer.
-
-📂 File Structure
-index.html — Main webpage markup
-
-style.css — Styling for layout and effects
-
-External libraries loaded via CDN (Swiper.js)
-
-⚠️ Notes
-🌐 Ensure you have an internet connection to load Swiper.js and Google Maps.
-
-📱 Designed primarily for desktop and mobile screens.
-
+---
 
